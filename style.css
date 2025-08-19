@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #001F3F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/*
+search & cateogry filter
+*/
+.search-filter {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    padding: 24px 20px;
+    background: linear-gradient(90deg,rgba(0,31,63,0.03),rgba(0,123,255,0.03));
+    border-top: 1px solid rgba(0,0,0,0.04);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.search-filter #searchinput {
+    width: 420px;
+    max-width: 60%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+.search-filter #searchinput:focus {
+    border-color: #007BFF;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+.search-filter #categoryFilter {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+@media(max-width:700px){
+    .search-filter {
+        flex-direction: column;
+        gap: 10px;
+        padding: 18px 12px;
+    }
+    .search-filter #searchinput {
+        width: 100%;
+        max-width: 100%;
+    }
+    .search-filter #categoryFilter {
+        width: 100%;
+    }
+}
+
+/* newsletter/subscribe */
+.newsletter {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 900px;   
+    box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #001F3F;
+}
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+.newsletter form input[type="email"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 4px 12px rgba(0,123,255,0.10);
+}
+.newsletter form button {
+    padding: 12px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0,123,255,0.12);
+    transition: transform 0.15 ease,background 0.15s ease;
+}
+.newsletter form button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+@media(max-width:700px){
+    .newsletter form input[type="email"] {
+        width: 100%;
+        max-width: 100%;
+    }
+    .newsletter form {
+        gap: 8px;
+        padding: 0 12px;
+    }
+}
+.hero {
+    background: linear-gradient(to right,#001F3F,#007BFF);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+.hero h1 {
+    font-size: 40px;
+}
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #FFA500;
+}
+
+.news {
+    padding: 40px 20px;
+    text-align: center;
+}
+.news h2 {
+    margin-bottom: 20px;
+}
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.card h3 {
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+.card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.card a {
+    color: #001F3F;
+    font-weight: bold;
+    text-decoration: none;
+}
+.card a:hover {
+    color: #ff4500;
+}
+
+footer {
+    background: #001F3F;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+.about li {
+    background: white;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+.contact form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact button {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact button:hover {
+    background: #0056b3;
+}

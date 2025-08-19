@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.subtitle {
+    font-size: 1.2em;
+}
+
+
+.intro, .topics, .example {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+.topics ul {
+    list-style: none;
+    padding: 0;
+}
+.topics li {
+    background: #e2f3e2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+

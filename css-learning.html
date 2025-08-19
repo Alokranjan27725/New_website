@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning - TASAPA</title>
+    <link rel="stylesheet" href="css-learning.css">
+</head>
+<body>
+
+    
+    <header>
+        <h1 class="logo">TASAPA</h1>
+        <p class="subtitle">CSS Learning Hub</p>
+    </header>
+
+    
+    <section class="intro">
+        <h2>Welcome to CSS Basics</h2>
+        <p>CSS (Cascading Style Sheets) is used to style and design HTML elements. It controls the layout, colors, fonts, and overall look of your webpage.</p>
+    </section>
+
+    
+    <section class="topics">
+        <h2>What You Will Learn</h2>
+        <ul>
+            <li>CSS Syntax & Selectors</li>
+            <li>Colors & Backgrounds</li>
+            <li>Fonts & Text Styling</li>
+            <li>Box Model & Spacing</li>
+            <li>Flexbox & Grid Layout</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
+   
+    <section class="example">
+        <h2>Example Code</h2>
+        <pre>
+h1 {
+    color: blue;
+    text-align: center;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+        </pre>
+    </section>
+
+    <!-- Add this after your previous CSS learning content -->
+
+<section>
+    <h2>CSS Syntax</h2>
+    <p>CSS syntax consists of a selector and a declaration block. The selector points to the HTML element you want to style.</p>
+    <pre>
+selector {
+    property: value;
+}
+    </pre>
+    <p>Example:</p>
+    <pre>
+p {
+    color: red;
+    font-size: 16px;
+}
+    </pre>
+</section>
+
+<section>
+    <h2>CSS Selectors</h2>
+    <p>CSS selectors are used to target HTML elements for styling. Common types include:</p>
+    <ul>
+        <li><strong>Element Selector</strong> - Selects elements by their tag name (e.g., <code>p</code>, <code>h1</code>)</li>
+        <li><strong>ID Selector</strong> - Selects an element by its ID using <code>#</code> (e.g., <code>#myId</code>)</li>
+        <li><strong>Class Selector</strong> - Selects elements by their class using <code>.</code> (e.g., <code>.myClass</code>)</li>
+        <li><strong>Universal Selector</strong> - Selects all elements using <code>*</code></li>
+        <li><strong>Group Selector</strong> - Selects multiple elements by separating selectors with a comma</li>
+    </ul>
+    <p>Example:</p>
+    <pre>
+/* Element selector */
+p {
+    color: blue;
+}
+
+/* ID selector */
+#title {
+    font-size: 24px;
+}
+
+/* Class selector */
+.intro {
+    background-color: yellow;
+}
+    </pre>
+</section>
+
+<section id="colors">
+        <h2>CSS Colors</h2>
+        <p>Colors can be defined using names, HEX, RGB, or HSL values.</p>
+        <pre>
+h1 {
+    color: red;
+}
+p {
+    color: #00ff00;
+}
+div {
+    color: rgb(0, 0, 255);
+}
+        </pre>
+    </section>
+
+    <section id="backgrounds">
+        <h2>CSS Backgrounds</h2>
+        <p>Background properties are used to set background colors, images, and more.</p>
+        <pre>
+body {
+    background-color: lightblue;
+}
+div {
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+        </pre>
+    </section>
+
+    <section id="borders">
+        <h2>CSS Borders</h2>
+        <p>Border properties define the style, width, and color of an element's border.</p>
+        <pre>
+p {
+    border: 2px solid black;
+}
+div {
+    border-radius: 10px;
+}
+        </pre>
+    </section>
+
+    <section id="margins">
+        <h2>CSS Margins</h2>
+        <p>Margins create space outside the element's border.</p>
+        <pre>
+div {
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+p {
+    margin: 10px;
+}
+        </pre>
+    </section>
+
+    <section id="padding">
+        <h2>CSS Padding</h2>
+        <p>Padding creates space inside the element's border.</p>
+        <pre>
+div {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+p {
+    padding: 10px;
+}
+        </pre>
+    </section>
+
+    <section id="boxmodel">
+        <h2>CSS Box Model</h2>
+        <p>The box model includes: content, padding, border, and margin.</p>
+        <pre>
+div {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+}
+        </pre>
+    </section>
+
+    <section id="text">
+        <h2>CSS Text Styling</h2>
+        <p>Examples of text properties in CSS.</p>
+        <pre>
+p {
+    color: darkblue;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1.5;
+}
+h1 {
+    text-shadow: 2px 2px 5px gray;
+}
+        </pre>
+    </section>
+
+    <section id="fonts">
+        <h2>CSS Fonts</h2>
+        <p>Different ways to style fonts in CSS.</p>
+        <pre>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+        </pre>
+    </section>
+
+    <section id="background">
+        <h2>CSS Backgrounds</h2>
+        <p>Learn how to set background colors, images, and gradients.</p>
+        <pre>
+body {
+    background-color: lightyellow;
+}
+div {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section {
+    background: linear-gradient(to right, lightblue, lightgreen);
+}
+        </pre>
+    </section>
+
+    <section id="borders">
+        <h2>CSS Borders</h2>
+        <p>Different border styles and properties in CSS.</p>
+        <pre>
+p {
+    border: 2px solid black;
+}
+h2 {
+    border-bottom: 3px dashed red;
+}
+div {
+    border: 5px double green;
+    border-radius: 10px;
+}
+        </pre>
+    </section>
+
+    <section id="box-model">
+        <h2>CSS Box Model</h2>
+        <p>The CSS box model consists of: content, padding, border, and margin.</p>
+        <pre>
+div {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid blue;
+    margin: 15px;
+}
+        </pre>
+    </section>
+
+    <section id="padding-margin">
+        <h2>CSS Padding and Margin</h2>
+        <p>Padding is space inside the element's border, margin is space outside it.</p>
+        <pre>
+.box1 {
+    padding: 10px;        /* All sides */
+    margin: 15px;         /* All sides */
+}
+.box2 {
+    padding: 10px 20px;   /* Top-Bottom | Left-Right */
+    margin: 5px 15px;     
+}
+.box3 {
+    padding: 5px 10px 15px 20px;  /* Top | Right | Bottom | Left */
+    margin: 0 auto;               /* Center horizontally */
+}
+        </pre>
+    </section>
+    
+    <section id="colors">
+        <h2>CSS Colors</h2>
+        <p>You can set colors using names, HEX, RGB, or HSL.</p>
+        <pre>
+.color1 {
+    color: red;             /* Color Name */
+}
+.color2 {
+    color: #00ff00;         /* HEX Code */
+}
+.color3 {
+    color: rgb(0, 0, 255);  /* RGB */
+}
+.color4 {
+    color: hsl(200, 100%, 50%); /* HSL */
+}
+        </pre>
+    </section>
+
+    <section id="fonts">
+        <h2>CSS Fonts</h2>
+        <p>Change the font family, size, and style of text.</p>
+        <pre>
+.text1 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.text2 {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+}
+        </pre>
+    </section>
+
+    <section id="text-styling">
+        <h2>CSS Text Styling</h2>
+        <p>Style text with alignment, decoration, and spacing.</p>
+        <pre>
+p {
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+        </pre>
+    </section>
+
+    <section id="backgrounds">
+        <h2>CSS Backgrounds</h2>
+        <p>Change background color, image, repeat, and position.</p>
+        <pre>
+.bg1 {
+    background-color: lightblue;
+}
+.bg2 {
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+        </pre>
+    </section>
+
+    <section id="borders">
+        <h2>CSS Borders</h2>
+        <p>Customize border width, style, and color.</p>
+        <pre>
+.border1 {
+    border: 2px solid black;
+}
+.border2 {
+    border: 3px dashed red;
+    border-radius: 10px;
+}
+        </pre>
+    </section>
+
+    <section id="shadows">
+        <h2>CSS Shadows</h2>
+        <p>Apply text and box shadows for styling.</p>
+        <pre>
+.shadow1 {
+    text-shadow: 2px 2px 5px gray;
+}
+.shadow2 {
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+        </pre>
+    </section>
+
+    <section id="position">
+        <h2>CSS Position</h2>
+        <p>Position elements in different ways.</p>
+        <pre>
+.pos-relative {
+    position: relative;
+    left: 20px;
+}
+.pos-absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.pos-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+        </pre>
+    </section>
+
+    <section id="display">
+        <h2>CSS Display</h2>
+        <p>Control how elements are displayed.</p>
+        <pre>
+.d-block {
+    display: block;
+}
+.d-inline {
+    display: inline;
+}
+.d-flex {
+    display: flex;
+}
+        </pre>
+    </section>
+
+    <section id="flexbox">
+        <h2>CSS Flexbox</h2>
+        <p>Arrange items easily with flexible boxes.</p>
+        <pre>
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-item {
+    background: lightblue;
+    padding: 10px;
+    margin: 5px;
+}
+        </pre>
+    </section>
+
+    <section id="grid">
+        <h2>CSS Grid</h2>
+        <p>Arrange elements in rows and columns.</p>
+        <pre>
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.grid-item {
+    background: lightgreen;
+    padding: 20px;
+    text-align: center;
+}
+        </pre>
+    </section>
+
+    <section id="transitions">
+        <h2>CSS Transitions</h2>
+        <p>Smoothly change property values.</p>
+        <pre>
+.transition-box {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    transition: background 0.5s, transform 0.5s;
+}
+.transition-box:hover {
+    background: red;
+    transform: scale(1.2);
+}
+        </pre>
+    </section>
+
+    <section id="animations">
+        <h2>CSS Animations</h2>
+        <p>Create moving effects using keyframes.</p>
+        <pre>
+@keyframes move {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+.animate-box {
+    width: 100px;
+    height: 100px;
+    background: purple;
+    animation: move 2s infinite;
+}
+        </pre>
+    </section>
+
+    <section id="variables">
+        <h2>CSS Variables</h2>
+        <p>Re-use values using custom properties.</p>
+        <pre>
+:root {
+    --main-color: #3498db;
+    --padding-size: 20px;
+}
+.box {
+    background: var(--main-color);
+    padding: var(--padding-size);
+}
+        </pre>
+    </section>
+
+    <section id="pseudo-classes">
+        <h2>CSS Pseudo-classes</h2>
+        <p>Style elements based on their state.</p>
+        <pre>
+a:hover {
+    color: red;
+}
+input:focus {
+    border: 2px solid blue;
+}
+li:first-child {
+    font-weight: bold;
+}
+        </pre>
+    </section>
+
+    <section id="media-queries">
+        <h2>CSS Media Queries</h2>
+        <p>Make designs responsive for different screen sizes.</p>
+        <pre>
+@media (max-width: 600px) {
+    body {
+        background-color: lightgray;
+    }
+    .box {
+        width: 100%;
+    }
+}
+        </pre>
+    </section>
+
+    <footer>
+        <p>© 2025 TASAPA. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

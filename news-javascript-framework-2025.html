@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Frameworks 2025</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .news-card {
+        background: white;
+        max-width: 600px;
+        margin: 50px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+    .news-card h2 {
+        color: #333;
+    }
+    .news-card p {
+        color: #555;
+        line-height: 1.6;
+    }
+    .read-more-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+    .read-more-btn:hover {
+        background: #0056b3;
+    }
+    .more-content {
+        display: none;
+        margin-top: 15px;
+        color: #444;
+    }
+</style>
+</head>
+<body>
+
+<div class="news-card">
+    <h2>JavaScript Frameworks to Watch in 2025</h2>
+    <p>JavaScript continues to evolve rapidly, and 2025 is no exception.  
+       From improved performance to AI-powered development tools, this year will bring exciting changes.</p>
+    
+    <div class="more-content">
+        <p><strong>1. React 19:</strong> Expected to bring faster server components, improved data fetching, and better developer experience.</p>
+        <p><strong>2. Angular 17+</strong> continues focusing on speed and TypeScript integration, making it even more suitable for large-scale enterprise apps.</p>
+        <p><strong>3. Vue 4:</strong> A complete rewrite with performance optimization and better composition API.</p>
+        <p><strong>4. Svelte 5:</strong> Focuses on compile-time optimizations, resulting in smaller bundles and faster execution.</p>
+        <p><strong>5. SolidJS:</strong> Known for its fine-grained reactivity, SolidJS is expected to gain more popularity in 2025.</p>
+        <p>Developers should keep an eye on emerging frameworks like Qwik and Astro for faster, SEO-friendly web apps.</p>
+    </div>
+
+    <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+</div>
+
+<script>
+    function toggleContent(button) {
+        const moreContent = button.previousElementSibling;
+        if (moreContent.style.display === "block") {
+            moreContent.style.display = "none";
+            button.textContent = "Read More";
+        } else {
+            moreContent.style.display = "block";
+            button.textContent = "Read Less";
+        }
+    }
+</script>
+
+</body>
+</html>
