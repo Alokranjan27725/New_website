@@ -4,38 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn HTML - Full Guide</title>
-    <link rel="stylesheet" href="learn-html.css">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .nav-link:hover {
+            background-color: #4CAF50;
+            border-radius: 0.375rem;
+            transition: all 0.3s ease;
+        }
+        #backtohome:hover {
+            background-color: #1a365d;
+            transform: translateY(-2px);
+        }
+        section {
+            transition: all 0.3s ease;
+        }
+        section:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
-<body>
-
-            <header class="logo1">
-         <div class="logo">TASAPA</div>
-            </header>
-    <header>
-
-        <h1>Learn HTML - Complete Beginner's Guide</h1>
-        <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages.</p>
+<body class="bg-gray-50">
+    <header class="bg-blue-900 text-white flex justify-between items-center px-8 py-4">
+        <div class="text-2xl font-bold">TASAPA</div>
     </header>
-    
 
-    <nav>
-        <a href="#intro">Introduction</a>
-        <a href="#headings">Headings</a>
-        <a href="#paragraphs">Paragraphs</a>
-        <a href="#links">Links</a>
-        <a href="#images">Images</a>
-        <a href="#lists">Lists</a>
-        <a href="#tables">Tables</a>
-        <a href="#forms">Forms</a>
+    <header class="bg-green-600 text-white py-10 text-center">
+        <h1 class="text-4xl font-bold mb-4">Learn HTML - Complete Beginner's Guide</h1>
+        <p class="text-xl">HTML (HyperText Markup Language) is the standard markup language for creating web pages.</p>
+    </header>
+
+    <nav class="bg-gray-800 flex justify-center py-3">
+        <div class="flex space-x-4">
+            <a href="#intro" class="text-white px-4 py-2 nav-link">Introduction</a>
+            <a href="#headings" class="text-white px-4 py-2 nav-link">Headings</a>
+            <a href="#paragraphs" class="text-white px-4 py-2 nav-link">Paragraphs</a>
+            <a href="#links" class="text-white px-4 py-2 nav-link">Links</a>
+            <a href="#images" class="text-white px-4 py-2 nav-link">Images</a>
+            <a href="#lists" class="text-white px-4 py-2 nav-link">Lists</a>
+            <a href="#tables" class="text-white px-4 py-2 nav-link">Tables</a>
+            <a href="#forms" class="text-white px-4 py-2 nav-link">Forms</a>
+        </div>
     </nav>
 
-    <main>
-       
-        <section id="intro">
-            <h2>1. Introduction to HTML</h2>
-            <p>HTML is used to structure content on the web. It uses tags to tell the browser how to display content.</p>
-            <pre>
+    <main class="container mx-auto px-4 py-8">
+        <section id="intro" class="bg-white p-6 rounded-lg shadow mb-6" data-aos="fade-up">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">1. Introduction to HTML</h2>
+            <p class="mb-4">HTML is used to structure content on the web. It uses tags to tell the browser how to display content.</p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -48,103 +67,121 @@
             </pre>
         </section>
 
-        
-        <section id="headings">
-            <h2>2. Headings</h2>
-            <p>HTML headings are defined with &lt;h1&gt; to &lt;h6&gt; tags.</p>
-            <h1>This is H1</h1>
-            <h2>This is H2</h2>
-            <h3>This is H3</h3>
+        <section id="headings" class="bg-white p-6 rounded-lg shadow mb-6" data-aos="fade-up">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">2. Headings</h2>
+            <p class="mb-4">HTML headings are defined with &lt;h1&gt; to &lt;h6&gt; tags.</p>
+            <h1 class="text-4xl font-bold mb-2">This is H1</h1>
+            <h2 class="text-3xl font-bold mb-2">This is H2</h2>
+            <h3 class="text-2xl font-bold">This is H3</h3>
         </section>
 
-        
-        <section id="paragraphs">
-            <h2>3. Paragraphs</h2>
+        <section id="paragraphs" class="bg-white p-6 rounded-lg shadow mb-6" data-aos="fade-up">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">3. Paragraphs</h2>
             <p>This is a paragraph in HTML. Paragraphs are defined using the &lt;p&gt; tag.</p>
         </section>
 
-        
-        <section id="links">
-            <h2>4. Links</h2>
-            <p>Links are created using the &lt;a&gt; tag.</p>
-            <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">Visit in details</a>
+        <section id="links" class="bg-white p-6 rounded-lg shadow mb-6" data-aos="fade-up">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">4. Links</h2>
+            <p class="mb-4">Links are created using the &lt;a&gt; tag.</p>
+            <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Visit in details</a>
         </section>
 
-        
-        <section id="images">
-            <h2>5. Images</h2>
-            <p>Images are displayed with the &lt;img&gt; tag.</p>
-            <img src="https://via.placeholder.com/200" alt="Sample Image">
+        <section id="images" class="bg-white p-6 rounded-lg shadow mb-6" data-aos="fade-up">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">5. Images</h2>
+            <p class="mb-4">Images are displayed with the &lt;img&gt; tag.</p>
+            <img src="https://static.photos/technology/640x360/42" alt="Sample Image" class="rounded-lg shadow-md">
         </section>
 
-        
-        <section id="lists">
-            <h2>6. Lists</h2>
-            <h3>Ordered List:</h3>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol>
-            <h3>Unordered List:</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
+        <section id="lists" class="bg-white p-6 rounded-lg shadow mb-6" data-aos="fade-up">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">6. Lists</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Ordered List:</h3>
+                    <ol class="list-decimal pl-6 space-y-1">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Unordered List:</h3>
+                    <ul class="list-disc pl-6 space-y-1">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        
-        <section id="tables">
-            <h2>7. Tables</h2>
-            <table border="1">
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Country</th>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>25</td>
-                    <td>USA</td>
-                </tr>
-                <tr>
-                    <td>Alok</td>
-                    <td>20</td>
-                    <td>India</td>
-                </tr>
-            </table>
+        <section id="tables" class="bg-white p-6 rounded-lg shadow mb-6" data-aos="fade-up">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">7. Tables</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full border">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="py-2 px-4 border">Name</th>
+                            <th class="py-2 px-4 border">Age</th>
+                            <th class="py-2 px-4 border">Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border">John</td>
+                            <td class="py-2 px-4 border">25</td>
+                            <td class="py-2 px-4 border">USA</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border">Alok</td>
+                            <td class="py-2 px-4 border">20</td>
+                            <td class="py-2 px-4 border">India</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        
-        <section id="forms">
-            <h2>8. Forms</h2>
-            <form>
-                <label>Name:</label>
-                <input type="text" placeholder="Enter your name"><br><br>
-
-                <label>Email:</label>
-                <input type="email" placeholder="Enter your email"><br><br>
-
-                <label>Password:</label>
-                <input type="password" placeholder="Enter password"><br><br>
-
-                <label>Message:</label><br>
-                <textarea placeholder="Type your message"></textarea><br><br>
-
-                <input type="submit" value="Submit">
+        <section id="forms" class="bg-white p-6 rounded-lg shadow mb-6" data-aos="fade-up">
+            <h2 class="text-2xl font-bold text-green-600 mb-4">8. Forms</h2>
+            <form class="space-y-4">
+                <div>
+                    <label class="block mb-1">Name:</label>
+                    <input type="text" placeholder="Enter your name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                
+                <div>
+                    <label class="block mb-1">Email:</label>
+                    <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                
+                <div>
+                    <label class="block mb-1">Password:</label>
+                    <input type="password" placeholder="Enter password" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                
+                <div>
+                    <label class="block mb-1">Message:</label>
+                    <textarea placeholder="Type your message" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500 h-24"></textarea>
+                </div>
+                
+                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded transition duration-300">Submit</button>
             </form>
         </section>
-
     </main>
 
-    <a href="index.html" id="backtohome">Back to Home</a>
+    <div class="text-center mb-8">
+        <a href="index.html" id="backtohome" class="inline-block bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-lg text-lg font-medium transition duration-300 shadow-lg">
+            Back to Home
+        </a>
+    </div>
 
-
-    <footer>
+    <footer class="bg-gray-800 text-white text-center py-4">
         <p>© 2025 Learn HTML Tutorial. All rights reserved.</p>
     </footer>
 
-    
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
 </body>
 </html>
