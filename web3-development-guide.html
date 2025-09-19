@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Development Guide | Transition from Web2 to Web3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #0f0e17;
+            color: #fffffe;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3da9fc 0%, #7f5af0 50%, #e53170 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card-glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div id="vanta-bg" class="w-full h-full"></div>
+        </div>
+        <div class="container mx-auto px-6 py-24 relative z-10">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span class="gradient-text">Web3 Development</span> Guide
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-10">
+                    How to transition from Web2 to Web3 development. Essential tools and concepts every developer should know in 2025.
+                </p>
+                <a href="#guide" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300">
+                    Start Learning
+                    <i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section id="guide" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">
+                    Your Roadmap to <span class="gradient-text">Web3 Mastery</span>
+                </h2>
+
+                <!-- Step 1 -->
+                <div class="card-glass rounded-2xl p-8 mb-12" data-aos="fade-up">
+                    <div class="flex items-start">
+                        <div class="bg-purple-600 rounded-full w-12 h-12 flex items-center justify-center mr-6 flex-shrink-0">
+                            <span class="text-white font-bold text-xl">1</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Understand the Web3 Fundamentals</h3>
+                            <p class="text-gray-300 mb-4">
+                                Web3 represents the next evolution of the internet, built on blockchain technology. Unlike Web2's centralized platforms, Web3 emphasizes decentralization, user ownership, and cryptographic security.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                                <div class="bg-gray-800 p-4 rounded-lg">
+                                    <i data-feather="lock" class="text-blue-400 mb-2"></i>
+                                    <h4 class="font-semibold mb-2">Blockchain Basics</h4>
+                                    <p class="text-sm text-gray-400">Learn about distributed ledgers, consensus mechanisms, and smart contracts.</p>
+                                </div>
+                                <div class="bg-gray-800 p-4 rounded-lg">
+                                    <i data-feather="dollar-sign" class="text-green-400 mb-2"></i>
+                                    <h4 class="font-semibold mb-2">Cryptoeconomics</h4>
+                                    <p class="text-sm text-gray-400">Understand tokenomics, incentives, and decentralized finance (DeFi).</p>
+                                </div>
+                                <div class="bg-gray-800 p-4 rounded-lg">
+                                    <i data-feather="users" class="text-purple-400 mb-2"></i>
+                                    <h4 class="font-semibold mb-2">DAOs</h4>
+                                    <p class="text-sm text-gray-400">Decentralized Autonomous Organizations and governance models.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="card-glass rounded-2xl p-8 mb-12" data-aos="fade-up">
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 rounded-full w-12 h-12 flex items-center justify-center mr-6 flex-shrink-0">
+                            <span class="text-white font-bold text-xl">2</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Master the Essential Tools</h3>
+                            <p class="text-gray-300 mb-4">
+                                The Web3 development stack differs significantly from traditional web development. Here are the key tools you need to learn:
+                            </p>
+                            <div class="mt-6">
+                                <div class="flex flex-wrap gap-4">
+                                    <span class="px-4 py-2 bg-gray-800 rounded-full text-sm">Solidity</span>
+                                    <span class="px-4 py-2 bg-gray-800 rounded-full text-sm">Hardhat</span>
+                                    <span class="px-4 py-2 bg-gray-800 rounded-full text-sm">Ethers.js</span>
+                                    <span class="px-4 py-2 bg-gray-800 rounded-full text-sm">Web3.js</span>
+                                    <span class="px-4 py-2 bg-gray-800 rounded-full text-sm">IPFS</span>
+                                    <span class="px-4 py-2 bg-gray-800 rounded-full text-sm">The Graph</span>
+                                    <span class="px-4 py-2 bg-gray-800 rounded-full text-sm">MetaMask SDK</span>
+                                    <span class="px-4 py-2 bg-gray-800 rounded-full text-sm">WalletConnect</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="card-glass rounded-2xl p-8 mb-12" data-aos="fade-up">
+                    <div class="flex items-start">
+                        <div class="bg-green-600 rounded-full w-12 h-12 flex items-center justify-center mr-6 flex-shrink-0">
+                            <span class="text-white font-bold text-xl">3</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Build Your First DApp</h3>
+                            <p class="text-gray-300 mb-4">
+                                The best way to learn is by doing. Start with a simple decentralized application that demonstrates core Web3 concepts.
+                            </p>
+                            <div class="bg-gray-800 p-6 rounded-lg mt-6">
+                                <h4 class="font-semibold mb-3 flex items-center">
+                                    <i data-feather="zap" class="text-yellow-400 mr-2"></i>
+                                    Quick Project Idea
+                                </h4>
+                                <p class="text-gray-400 mb-4">
+                                    Create a decentralized voting system where users can:
+                                </p>
+                                <ul class="list-disc pl-5 text-gray-400 space-y-2">
+                                    <li>Connect their wallet to authenticate</li>
+                                    <li>View existing proposals</li>
+                                    <li>Cast votes using governance tokens</li>
+                                    <li>See real-time vote counts</li>
+                                </ul>
+                                <a href="#" class="inline-flex items-center text-blue-400 mt-4 hover:text-blue-300">
+                                    View tutorial
+                                    <i data-feather="external-link" class="ml-1 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources Section -->
+                <div class="text-center mt-20" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-6">Additional <span class="gradient-text">Resources</span></h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="card-glass p-6 rounded-xl">
+                            <i data-feather="book" class="text-purple-400 w-10 h-10 mb-4 mx-auto"></i>
+                            <h3 class="font-bold mb-2">Documentation</h3>
+                            <p class="text-gray-400 text-sm">Official docs for Ethereum, Solidity, and popular frameworks.</p>
+                        </div>
+                        <div class="card-glass p-6 rounded-xl">
+                            <i data-feather="youtube" class="text-red-400 w-10 h-10 mb-4 mx-auto"></i>
+                            <h3 class="font-bold mb-2">Video Tutorials</h3>
+                            <p class="text-gray-400 text-sm">Step-by-step guides from Web3 experts.</p>
+                        </div>
+                        <div class="card-glass p-6 rounded-xl">
+                            <i data-feather="github" class="text-white w-10 h-10 mb-4 mx-auto"></i>
+                            <h3 class="font-bold mb-2">Open Source</h3>
+                            <p class="text-gray-400 text-sm">Study and contribute to Web3 projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to <span class="gradient-text">Build the Future</span>?</h2>
+                <p class="text-xl text-gray-300 mb-10">
+                    Join our community of Web3 developers and get access to exclusive resources, mentorship, and job opportunities.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300">
+                        Join Community
+                    </a>
+                    <a href="#" class="px-8 py-4 border border-gray-600 rounded-full text-white font-semibold hover:bg-gray-800 transition-all duration-300">
+                        Explore Courses
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold gradient-text">Web3 Dev Guide</h2>
+                    <p class="text-gray-500 mt-2">Empowering the next generation of Web3 builders</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="discord"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Web3 Development Guide. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        feather.replace();
+        
+        // Initialize Vanta.js
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3da9fc,
+            backgroundColor: 0x0f0e17,
+            size: 0.8
+        });
+    </script>
+</body>
+</html>
