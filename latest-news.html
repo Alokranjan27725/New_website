@@ -4,24 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TASAPA - Latest News</title>
-    <link rel="stylesheet" href="latest-news.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .news-image {
+            height: 200px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        .news-card:hover .news-image {
+            transform: scale(1.05);
+        }
+        .loading-spinner {
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #3b82f6;
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Latest News - TASAPA</h1>
-        <a href="index.html" class="back-home">← Back to Home</a>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold flex items-center">
+                <i data-feather="activity" class="mr-2"></i> TASAPA News
+            </h1>
+            <a href="index.html" class="flex items-center text-white hover:text-blue-200 transition-colors">
+                <i data-feather="arrow-left" class="mr-1"></i> Back to Home
+            </a>
+        </div>
     </header>
 
-    <main>
-        <div id="news-container" class="news-container">
-            <p class="loading">Loading latest news...</p>
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-8 text-gray-800 border-b pb-2">Latest Updates</h2>
+        
+        <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden news-card transition-all duration-300">
+                <div class="overflow-hidden">
+                    <img src="http://static.photos/news/640x360/1" alt="News image" class="w-full news-image">
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-blue-600">June 15, 2025</span>
+                    <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800">TASAPA Announces New Research Initiative</h3>
+                    <p class="text-gray-600 mb-4">The organization revealed plans for groundbreaking research in sustainable agriculture practices across Africa.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                        Read more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden news-card transition-all duration-300">
+                <div class="overflow-hidden">
+                    <img src="http://static.photos/agriculture/640x360/2" alt="News image" class="w-full news-image">
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-blue-600">June 10, 2025</span>
+                    <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800">Partnership with Local Farmers Yields Results</h3>
+                    <p class="text-gray-600 mb-4">Our collaborative program has helped increase crop yields by 35% in participating communities this season.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                        Read more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden news-card transition-all duration-300">
+                <div class="overflow-hidden">
+                    <img src="http://static.photos/education/640x360/3" alt="News image" class="w-full news-image">
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-blue-600">June 5, 2025</span>
+                    <h3 class="text-xl font-bold mt-2 mb-3 text-gray-800">Training Program Graduates 200 New Specialists</h3>
+                    <p class="text-gray-600 mb-4">The latest cohort of agricultural specialists completed our intensive training program and are ready to serve their communities.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                        Read more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <p>© 2025 TASAPA News</p>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold flex items-center">
+                        <i data-feather="globe" class="mr-2"></i> TASAPA
+                    </h3>
+                    <p class="text-gray-400 mt-2">Empowering agricultural development across Africa</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+                <p>© 2025 TASAPA. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-
+    <script>
+        AOS.init();
+        feather.replace();
+        
+        // Simulate loading news
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsContainer = document.getElementById('news-container');
+            
+            // Show loading state
+            newsContainer.innerHTML = `
+                <div class="col-span-full flex justify-center items-center py-12">
+                    <div class="flex flex-col items-center">
+                        <div class="loading-spinner mb-4"></div>
+                        <p class="text-gray-600">Loading latest news...</p>
+                    </div>
+                </div>
+            `;
+            
+            // Simulate API fetch delay
+            setTimeout(() => {
+                // Content would be populated here from an actual API
+                // The initial HTML already contains sample news cards
+            }, 1500);
+        });
+    </script>
 </body>
 </html>
