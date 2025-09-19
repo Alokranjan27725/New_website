@@ -1,84 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JavaScript Frameworks 2025</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
-    .news-card {
-        background: white;
-        max-width: 600px;
-        margin: 50px auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        padding: 20px;
-    }
-    .news-card h2 {
-        color: #333;
-    }
-    .news-card p {
-        color: #555;
-        line-height: 1.6;
-    }
-    .read-more-btn {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-top: 10px;
-        background: #007BFF;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 14px;
-        transition: 0.3s;
-    }
-    .read-more-btn:hover {
-        background: #0056b3;
-    }
-    .more-content {
-        display: none;
-        margin-top: 15px;
-        color: #444;
-    }
-</style>
-</head>
-<body>
-
-<div class="news-card">
-    <h2>JavaScript Frameworks to Watch in 2025</h2>
-    <p>JavaScript continues to evolve rapidly, and 2025 is no exception.  
-       From improved performance to AI-powered development tools, this year will bring exciting changes.</p>
-    
-    <div class="more-content">
-        <p><strong>1. React 19:</strong> Expected to bring faster server components, improved data fetching, and better developer experience.</p>
-        <p><strong>2. Angular 17+</strong> continues focusing on speed and TypeScript integration, making it even more suitable for large-scale enterprise apps.</p>
-        <p><strong>3. Vue 4:</strong> A complete rewrite with performance optimization and better composition API.</p>
-        <p><strong>4. Svelte 5:</strong> Focuses on compile-time optimizations, resulting in smaller bundles and faster execution.</p>
-        <p><strong>5. SolidJS:</strong> Known for its fine-grained reactivity, SolidJS is expected to gain more popularity in 2025.</p>
-        <p>Developers should keep an eye on emerging frameworks like Qwik and Astro for faster, SEO-friendly web apps.</p>
-    </div>
-
-    <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
-</div>
-
-<script>
-    function toggleContent(button) {
-        const moreContent = button.previousElementSibling;
-        if (moreContent.style.display === "block") {
-            moreContent.style.display = "none";
-            button.textContent = "Read More";
-        } else {
-            moreContent.style.display = "block";
-            button.textContent = "Read Less";
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Frameworks 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
-    }
-</script>
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .read-more-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-12">
+            <div class="flex flex-col items-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center" data-aos="fade-down">JavaScript Frameworks 2025</h1>
+                <p class="text-xl text-center max-w-2xl" data-aos="fade-up" data-aos-delay="200">The future of web development is here</p>
+                <div class="mt-8" data-aos="fade-up" data-aos-delay="400">
+                    <i data-feather="code" class="w-12 h-12"></i>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16">
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden card-hover" data-aos="zoom-in">
+            <div class="p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i data-feather="trending-up" class="text-blue-600 w-6 h-6"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">Framework Trends for 2025</h2>
+                </div>
+                
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    JavaScript continues to evolve rapidly, and 2025 is no exception.  
+                    From improved performance to AI-powered development tools, this year will bring exciting changes.
+                </p>
+                
+                <div class="read-more-content" id="moreContent">
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                                <i data-feather="zap" class="text-green-600 w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">React 19</h3>
+                                <p class="text-gray-600">Expected to bring faster server components, improved data fetching, and better developer experience.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-2 rounded-full mr-4 mt-1">
+                                <i data-feather="box" class="text-red-600 w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Angular 17+</h3>
+                                <p class="text-gray-600">Continues focusing on speed and TypeScript integration, making it even more suitable for large-scale enterprise apps.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-2 rounded-full mr-4 mt-1">
+                                <i data-feather="feather" class="text-purple-600 w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Vue 4</h3>
+                                <p class="text-gray-600">A complete rewrite with performance optimization and better composition API.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-2 rounded-full mr-4 mt-1">
+                                <i data-feather="cpu" class="text-yellow-600 w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Svelte 5</h3>
+                                <p class="text-gray-600">Focuses on compile-time optimizations, resulting in smaller bundles and faster execution.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-2 rounded-full mr-4 mt-1">
+                                <i data-feather="layers" class="text-indigo-600 w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">SolidJS</h3>
+                                <p class="text-gray-600">Known for its fine-grained reactivity, SolidJS is expected to gain more popularity in 2025.</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-600 mt-6">
+                            Developers should keep an eye on emerging frameworks like Qwik and Astro for faster, SEO-friendly web apps.
+                        </p>
+                    </div>
+                </div>
+                
+                <button onclick="toggleContent()" class="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 flex items-center">
+                    <span id="btnText">Read More</span>
+                    <i data-feather="chevron-down" id="btnIcon" class="ml-2 w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 JavaScript Trends. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-blue-400 transition"><i data-feather="github"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i data-feather="twitter"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i data-feather="linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Toggle Read More Content
+        function toggleContent() {
+            const content = document.getElementById('moreContent');
+            const btnText = document.getElementById('btnText');
+            const btnIcon = document.getElementById('btnIcon');
+            
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                btnText.textContent = 'Read More';
+                btnIcon.setAttribute('data-feather', 'chevron-down');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                btnText.textContent = 'Read Less';
+                btnIcon.setAttribute('data-feather', 'chevron-up');
+            }
+            feather.replace();
+        }
+    </script>
 </body>
 </html>
