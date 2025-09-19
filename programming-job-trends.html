@@ -4,35 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming Job Trends in 2025</title>
-    <link rel="stylesheet" href="programming-job-trends.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #6e8efb 0%, #4a6cf7 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .back-btn {
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+    </style>
 </head>
-<body>
-    <div class="article-container">
-        <h1>Programming Job Trends in 2025</h1>
-        <p>In 2025, the programming job market continues to expand, with certain technologies and skills becoming more valuable than ever. Companies are seeking professionals who can adapt quickly to new tools, frameworks, and work environments.</p>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold">TechTrends 2025</h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="hover:text-gray-200 transition">Home</a></li>
+                        <li><a href="news.html" class="hover:text-gray-200 transition">News</a></li>
+                        <li><a href="about.html" class="hover:text-gray-200 transition">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-        <h2>1. Artificial Intelligence & Machine Learning</h2>
-        <p>AI and ML remain at the top of the demand list. Developers with experience in AI-powered applications, data science, and predictive analytics are in high demand, especially in finance, healthcare, and automation industries.</p>
+    <!-- Article Content -->
+    <main class="container mx-auto px-6 py-12 max-w-4xl">
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale" data-aos="fade-up">
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-sm text-gray-500">Published: June 15, 2025</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Trending</span>
+                </div>
+                
+                <h1 class="text-4xl font-bold text-gray-800 mb-6">Programming Job Trends in 2025</h1>
+                
+                <div class="flex items-center mb-8">
+                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                        <img src="http://static.photos/technology/200x200/42" alt="Author" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <p class="font-medium text-gray-800">Sarah Johnson</p>
+                        <p class="text-gray-500 text-sm">Tech Analyst</p>
+                    </div>
+                </div>
+                
+                <img src="http://static.photos/technology/1200x630/10" alt="Programming Trends" class="w-full h-auto rounded-lg mb-8">
+                
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    In 2025, the programming job market continues to expand, with certain technologies and skills becoming more valuable than ever. Companies are seeking professionals who can adapt quickly to new tools, frameworks, and work environments.
+                </p>
 
-        <h2>2. Cloud-Native Development</h2>
-        <p>With most companies migrating to cloud platforms like AWS, Azure, and Google Cloud, skills in cloud-native application development, serverless computing, and containerization (Docker, Kubernetes) are essential for staying competitive.</p>
+                <div class="space-y-8">
+                    <section data-aos="fade-right">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-feather="cpu" class="mr-3 text-blue-500"></i>
+                            Artificial Intelligence & Machine Learning
+                        </h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            AI and ML remain at the top of the demand list. Developers with experience in AI-powered applications, data science, and predictive analytics are in high demand, especially in finance, healthcare, and automation industries.
+                        </p>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-blue-800 font-medium">Average Salary: $140,000 - $220,000</p>
+                        </div>
+                    </section>
 
-        <h2>3. Cybersecurity Expertise</h2>
-        <p>As cyber threats grow more complex, programmers with cybersecurity knowledge are highly valued. Secure coding practices, penetration testing, and compliance knowledge are key areas to master.</p>
+                    <section data-aos="fade-left">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-feather="cloud" class="mr-3 text-blue-500"></i>
+                            Cloud-Native Development
+                        </h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            With most companies migrating to cloud platforms like AWS, Azure, and Google Cloud, skills in cloud-native application development, serverless computing, and containerization (Docker, Kubernetes) are essential for staying competitive.
+                        </p>
+                    </section>
 
-        <h2>4. Remote Work Skills</h2>
-        <p>Distributed teams are now the normal, making collaboration tools, version control (Git), and agile methodologies critical for success.</p>
+                    <section data-aos="fade-right">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-feather="shield" class="mr-3 text-blue-500"></i>
+                            Cybersecurity Expertise
+                        </h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            As cyber threats grow more complex, programmers with cybersecurity knowledge are highly valued. Secure coding practices, penetration testing, and compliance knowledge are key areas to master.
+                        </p>
+                    </section>
 
-        <h2>5. Hot Programming Languages</h2>
-        <ul>
-            <li>Python – AI, Data Science, Automation</li>
-            <li>JavaScript/TypeScript – Web & Mobile Development</li>
-            <li>Rust – High-performance and secure systems</li>
-            <li>Go – Cloud-native applications</li>
-        </ul>
+                    <section data-aos="fade-left">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-feather="users" class="mr-3 text-blue-500"></i>
+                            Remote Work Skills
+                        </h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Distributed teams are now the normal, making collaboration tools, version control (Git), and agile methodologies critical for success.
+                        </p>
+                    </section>
 
-        <p>In short, adaptability and continuous learning will be the defining factors for success in the programming field in 2025 and beyond.</p>
-        <a href="news.html" class="back-btn">⬅ Back to News</a>
-    </div>
+                    <section data-aos="fade-up">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i data-feather="code" class="mr-3 text-blue-500"></i>
+                            Hot Programming Languages
+                        </h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                                <h3 class="font-bold text-lg text-gray-800 mb-2">Python</h3>
+                                <p class="text-gray-700">AI, Data Science, Automation</p>
+                                <div class="mt-2">
+                                    <span class="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">+32% Growth</span>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                                <h3 class="font-bold text-lg text-gray-800 mb-2">JavaScript/TypeScript</h3>
+                                <p class="text-gray-700">Web & Mobile Development</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                                <h3 class="font-bold text-lg text-gray-800 mb-2">Rust</h3>
+                                <p class="text-gray-700">High-performance and secure systems</p>
+                                <div class="mt-2">
+                                    <span class="inline-block bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Emerging</span>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                                <h3 class="font-bold text-lg text-gray-800 mb-2">Go</h3>
+                                <p class="text-gray-700">Cloud-native applications</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-200">
+                    <p class="text-gray-700 italic">
+                        In short, adaptability and continuous learning will be the defining factors for success in the programming field in 2025 and beyond.
+                    </p>
+                </div>
+
+                <div class="mt-8">
+                    <a href="news.html" class="back-btn inline-flex items-center text-blue-600 font-medium">
+                        <i data-feather="arrow-left" class="mr-2"></i>
+                        Back to News
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">TechTrends 2025</h3>
+                    <p class="text-gray-400">Your source for the latest in technology trends and career insights.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">News</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Subscribe</h4>
+                    <p class="text-gray-400 mb-4">Get the latest trends delivered to your inbox.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l text-gray-800 w-full">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r">
+                            <i data-feather="send"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 TechTrends. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
 </body>
 </html>
