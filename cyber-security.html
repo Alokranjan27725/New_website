@@ -1,68 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cyber Security Basics - TASAPA</title>
-  <link rel="stylesheet" href="latest-news.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Basics - TASAPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+        }
+        .content-card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Cyber Security Basics</h1>
-  </header>
+<body class="min-h-screen gradient-bg text-white font-sans">
+    <header class="py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-down">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Cyber Security Basics</h1>
+            <div class="flex justify-center space-x-2">
+                <i data-feather="shield" class="w-6 h-6"></i>
+                <i data-feather="lock" class="w-6 h-6"></i>
+                <i data-feather="key" class="w-6 h-6"></i>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <article class="content-card">
-      <h2>Introduction</h2>
-      <p>
-        Cyber security ka matlab hai systems, networks aur programs ko digital attacks se bachana.
-        Ye attacks aksar sensitive data churaane, systems ko nuksaan pahunchane, ya unauthorized access ke liye kiye jaate hain.
-      </p>
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <article class="content-card rounded-xl p-6 sm:p-8 mb-8 shadow-xl" data-aos="fade-up">
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <i data-feather="info" class="mr-2"></i> Introduction
+                </h2>
+                <p class="text-lg leading-relaxed">
+                    Cyber security ka matlab hai systems, networks aur programs ko digital attacks se bachana.
+                    Ye attacks aksar sensitive data churaane, systems ko nuksaan pahunchane, ya unauthorized access ke liye kiye jaate hain.
+                </p>
+            </section>
 
-      <h2>Key Concepts</h2>
-      <ul>
-        <li><strong>Confidentiality</strong> — Data sirf authorised logon ke liye accessible ho.</li>
-        <li><strong>Integrity</strong> — Data accurate aur unchanged rahe jab tak authorised na ho.</li>
-        <li><strong>Availability</strong> — Systems aur services jab chahiye tab available rahen.</li>
-      </ul>
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <i data-feather="target" class="mr-2"></i> Key Concepts
+                </h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i data-feather="eye" class="mr-2 mt-1 text-blue-300"></i>
+                        <span><strong class="text-blue-300">Confidentiality</strong> — Data sirf authorised logon ke liye accessible ho.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="mr-2 mt-1 text-green-300"></i>
+                        <span><strong class="text-green-300">Integrity</strong> — Data accurate aur unchanged rahe jab tak authorised na ho.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="zap" class="mr-2 mt-1 text-yellow-300"></i>
+                        <span><strong class="text-yellow-300">Availability</strong> — Systems aur services jab chahiye tab available rahen.</span>
+                    </li>
+                </ul>
+            </section>
 
-      <h2>Common Threats</h2>
-      <ul>
-        <li><strong>Phishing</strong> — Fake emails/websites se login info churaana.</li>
-        <li><strong>Malware</strong> — Viruses, trojans, ransomware jo system ko damage karte hain.</li>
-        <li><strong>Man-in-the-Middle (MitM)</strong> — Communication ke beech me data intercept karna.</li>
-        <li><strong>Brute-force attacks</strong> — Passwords ko guess karne ki koshish.</li>
-      </ul>
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <i data-feather="alert-triangle" class="mr-2"></i> Common Threats
+                </h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-blue-900/30 p-4 rounded-lg">
+                        <h3 class="font-semibold text-lg mb-2 flex items-center">
+                            <i data-feather="mail" class="mr-2 text-red-400"></i> Phishing
+                        </h3>
+                        <p>Fake emails/websites se login info churaana.</p>
+                    </div>
+                    <div class="bg-blue-900/30 p-4 rounded-lg">
+                        <h3 class="font-semibold text-lg mb-2 flex items-center">
+                            <i data-feather="cpu" class="mr-2 text-red-400"></i> Malware
+                        </h3>
+                        <p>Viruses, trojans, ransomware jo system ko damage karte hain.</p>
+                    </div>
+                    <div class="bg-blue-900/30 p-4 rounded-lg">
+                        <h3 class="font-semibold text-lg mb-2 flex items-center">
+                            <i data-feather="wifi" class="mr-2 text-red-400"></i> Man-in-the-Middle
+                        </h3>
+                        <p>Communication ke beech me data intercept karna.</p>
+                    </div>
+                    <div class="bg-blue-900/30 p-4 rounded-lg">
+                        <h3 class="font-semibold text-lg mb-2 flex items-center">
+                            <i data-feather="unlock" class="mr-2 text-red-400"></i> Brute-force attacks
+                        </h3>
+                        <p>Passwords ko guess karne ki koshish.</p>
+                    </div>
+                </div>
+            </section>
 
-      <h2>Practical Best Practices</h2>
-      <ol>
-        <li>Strong & unique passwords use karo — password manager ka istemal karo.</li>
-        <li>Two-Factor Authentication (2FA) enable karo jahan available ho.</li>
-        <li>Software aur OS ko regularly update karo (patches important hain).</li>
-        <li>Unknown links aur attachments pe click mat karo — phishing se savdhaan raho.</li>
-        <li>Public Wi-Fi par sensitive kaam na karo; VPN ka use karo agar zaroori ho.</li>
-        <li>Regular backups rakho — ransomware se bachne ka best defence.</li>
-      </ol>
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <i data-feather="shield" class="mr-2"></i> Practical Best Practices
+                </h2>
+                <ol class="space-y-3 list-decimal list-inside">
+                    <li class="pl-2">Strong & unique passwords use karo — password manager ka istemal karo.</li>
+                    <li class="pl-2">Two-Factor Authentication (2FA) enable karo jahan available ho.</li>
+                    <li class="pl-2">Software aur OS ko regularly update karo (patches important hain).</li>
+                    <li class="pl-2">Unknown links aur attachments pe click mat karo — phishing se savdhaan raho.</li>
+                    <li class="pl-2">Public Wi-Fi par sensitive kaam na karo; VPN ka use karo agar zaroori ho.</li>
+                    <li class="pl-2">Regular backups rakho — ransomware se bachne ka best defence.</li>
+                </ol>
+            </section>
 
-      <h2>Quick Tools & Resources</h2>
-      <ul>
-        <li>Have I Been Pwned — check compromised emails</li>
-        <li>OWASP Top 10 — web security common vulnerabilities</li>
-        <li>Mozilla Observatory — site security check</li>
-      </ul>
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <i data-feather="tool" class="mr-2"></i> Quick Tools & Resources
+                </h2>
+                <div class="grid sm:grid-cols-3 gap-4">
+                    <div class="bg-blue-900/30 p-4 rounded-lg hover:bg-blue-900/50 transition">
+                        <h3 class="font-semibold mb-2">Have I Been Pwned</h3>
+                        <p class="text-sm">Check compromised emails</p>
+                    </div>
+                    <div class="bg-blue-900/30 p-4 rounded-lg hover:bg-blue-900/50 transition">
+                        <h3 class="font-semibold mb-2">OWASP Top 10</h3>
+                        <p class="text-sm">Web security common vulnerabilities</p>
+                    </div>
+                    <div class="bg-blue-900/30 p-4 rounded-lg hover:bg-blue-900/50 transition">
+                        <h3 class="font-semibold mb-2">Mozilla Observatory</h3>
+                        <p class="text-sm">Site security check</p>
+                    </div>
+                </div>
+            </section>
 
-      <h2>Further Reading</h2>
-      <p>
-        Agar tum serious hona chahte ho, OWASP documentation padhna shuru karo aur small projects me secure coding practice implement karo.
-      </p>
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <i data-feather="book-open" class="mr-2"></i> Further Reading
+                </h2>
+                <p class="text-lg leading-relaxed">
+                    Agar tum serious hona chahte ho, OWASP documentation padhna shuru karo aur small projects me secure coding practice implement karo.
+                </p>
+            </section>
 
-      <a href="index.html" class="btn">⬅ Back to Home</a>
-      <a href="ai-revolution.html" class="btn" style="margin-left:10px;">Next: AI in Coding ➜</a>
-    </article>
-  </main>
+            <div class="flex flex-wrap gap-4 mt-8">
+                <a href="index.html" class="btn-hover transition duration-300 bg-blue-700 hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-lg flex items-center">
+                    <i data-feather="arrow-left" class="mr-2"></i> Back to Home
+                </a>
+                <a href="ai-revolution.html" class="btn-hover transition duration-300 bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 px-6 rounded-lg flex items-center">
+                    Next: AI in Coding <i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </article>
+    </main>
 
-  <footer>
-    <p>© 2025 TASAPA</p>
-  </footer>
+    <footer class="py-6 text-center text-blue-200">
+        <p>© 2025 TASAPA</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
 </body>
 </html>
