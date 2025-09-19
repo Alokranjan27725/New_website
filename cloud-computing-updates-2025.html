@@ -4,72 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Computing Updates 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-        }
-        .date {
-            color: #888;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-        p {
-            line-height: 1.6;
-            color: #333;
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
         .highlight {
-            color: #2980b9;
-            font-weight: bold;
+            @apply text-blue-600 font-semibold;
         }
-        .read-more {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 15px;
-            background: #2980b9;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .read-more:hover {
-            background: #1f5f8b;
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
     </style>
 </head>
-<body>
+<body class="gradient-bg min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <div data-aos="fade-up" class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden card-hover">
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h1 class="text-3xl font-bold text-gray-800">Cloud Computing Updates 2025</h1>
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="calendar" class="text-gray-500"></i>
+                        <span class="text-gray-500">August 14, 2025</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-6 text-gray-700">
+                    <p class="text-lg leading-relaxed">
+                        In <span class="highlight">2025</span>, cloud computing is witnessing a significant transformation. 
+                        With advancements in <span class="highlight">AI-powered cloud services</span>, edge computing integration, and improved 
+                        multi-cloud strategies, businesses are achieving faster performance, better scalability, and 
+                        enhanced security.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <div class="flex items-start">
+                            <i data-feather="alert-circle" class="text-blue-500 mr-3 mt-1"></i>
+                            <p>
+                                Major providers like AWS, Microsoft Azure, and Google Cloud are introducing 
+                                cost-effective solutions for enterprises of all sizes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-lg leading-relaxed">
+                        This year also marks the growth of <span class="highlight">Green Cloud Initiatives</span>, where companies are 
+                        focusing on energy-efficient data centers to reduce carbon footprints. With 5G networks 
+                        expanding globally, cloud-based applications are becoming more accessible and faster than ever.
+                    </p>
+                    
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="https://www.ibm.com/cloud/learn/cloud-computing" target="_blank" 
+                           class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition flex items-center">
+                            <i data-feather="external-link" class="mr-2"></i> Read More
+                        </a>
+                        <button class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition flex items-center">
+                            <i data-feather="bookmark" class="mr-2"></i> Save Article
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 px-8 py-4 border-t border-gray-200">
+                <div class="flex items-center space-x-4">
+                    <img src="http://static.photos/technology/200x200/42" alt="Author" class="w-10 h-10 rounded-full">
+                    <div>
+                        <p class="font-medium">Tech Insights Team</p>
+                        <p class="text-sm text-gray-500">Cloud Computing Specialists</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                <img src="http://static.photos/technology/640x360/1" alt="AI Cloud" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">AI Integration in Cloud</h3>
+                    <p class="text-gray-600">How artificial intelligence is revolutionizing cloud services in 2025.</p>
+                </div>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                <img src="http://static.photos/technology/640x360/2" alt="Green Cloud" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Sustainable Cloud Solutions</h3>
+                    <p class="text-gray-600">The push for eco-friendly data centers and renewable energy usage.</p>
+                </div>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-delay="300" class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                <img src="http://static.photos/technology/640x360/3" alt="5G Cloud" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">5G and Cloud Synergy</h3>
+                    <p class="text-gray-600">How 5G networks are enhancing cloud application performance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="container">
-    <h1>Cloud Computing Updates 2025</h1>
-    <div class="date">Published on: August 14, 2025</div>
-    <p>
-        In <span class="highlight">2025</span>, cloud computing is witnessing a significant transformation. 
-        With advancements in <strong>AI-powered cloud services</strong>, edge computing integration, and improved 
-        multi-cloud strategies, businesses are achieving faster performance, better scalability, and 
-        enhanced security. Major providers like AWS, Microsoft Azure, and Google Cloud are introducing 
-        cost-effective solutions for enterprises of all sizes.
-    </p>
-    <p>
-        This year also marks the growth of <strong>Green Cloud Initiatives</strong>, where companies are 
-        focusing on energy-efficient data centers to reduce carbon footprints. With 5G networks 
-        expanding globally, cloud-based applications are becoming more accessible and faster than ever.
-    </p>
-    <a href="https://www.ibm.com/cloud/learn/cloud-computing" target="_blank" class="read-more">Read More</a>
-</div>
-
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
 </body>
 </html>
