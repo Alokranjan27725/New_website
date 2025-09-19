@@ -4,34 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development Trends 2025</title>
-    <link rel="stylesheet" href="trends-2025.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .trend-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Web Development Trends 2025</h1>
+<body class="bg-gray-50">
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                    <span class="gradient-text">Web Development</span>
+                    <br>Trends 2025
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover the technologies shaping the future of the web
+                </p>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <article>
-            <h2>1. AI-Driven Development</h2>
-            <p>AI tools are becoming essential in web development for automating design, testing, and optimization...</p>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Trend 1 -->
+            <div class="trend-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out" data-aos="fade-up">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i data-feather="cpu" class="text-blue-600"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900">AI-Driven Development</h2>
+                    </div>
+                    <p class="text-gray-600">
+                        AI tools are becoming essential in web development for automating design, testing, and optimization...
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center text-blue-600 hover:text-blue-800">
+                        Learn more
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
 
-            <h2>2. Progressive Web Apps (PWAs)</h2>
-            <p>PWAs continue to bridge the gap between mobile apps and websites, offering offline capabilities...</p>
+            <!-- Trend 2 -->
+            <div class="trend-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i data-feather="smartphone" class="text-purple-600"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900">Progressive Web Apps</h2>
+                    </div>
+                    <p class="text-gray-600">
+                        PWAs continue to bridge the gap between mobile apps and websites, offering offline capabilities...
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center text-purple-600 hover:text-purple-800">
+                        Learn more
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
 
-            <h2>3. Web3 and Blockchain</h2>
-            <p>With blockchain integration, decentralized apps (dApps) are gaining more traction in the web space...</p>
+            <!-- Trend 3 -->
+            <div class="trend-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i data-feather="link" class="text-green-600"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900">Web3 & Blockchain</h2>
+                    </div>
+                    <p class="text-gray-600">
+                        With blockchain integration, decentralized apps (dApps) are gaining more traction in the web space...
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center text-green-600 hover:text-green-800">
+                        Learn more
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
 
-            <h2>4. Voice Search Optimization</h2>
-            <p>As smart assistants become more common, optimizing for voice search is now critical...</p>
+            <!-- Trend 4 -->
+            <div class="trend-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out" data-aos="fade-up">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i data-feather="mic" class="text-yellow-600"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900">Voice Search Optimization</h2>
+                    </div>
+                    <p class="text-gray-600">
+                        As smart assistants become more common, optimizing for voice search is now critical...
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center text-yellow-600 hover:text-yellow-800">
+                        Learn more
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
 
-            <h2>5. Enhanced Cybersecurity</h2>
-            <p>Security remains a top priority, with developers focusing on zero-trust architectures and encryption...</p>
-        </article>
+            <!-- Trend 5 -->
+            <div class="trend-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i data-feather="shield" class="text-red-600"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900">Enhanced Cybersecurity</h2>
+                    </div>
+                    <p class="text-gray-600">
+                        Security remains a top priority, with developers focusing on zero-trust architectures and encryption...
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center text-red-600 hover:text-red-800">
+                        Learn more
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coming Soon -->
+            <div class="trend-card bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200">
+                <div class="p-6 h-full flex flex-col justify-center items-center">
+                    <div class="bg-gray-300 p-3 rounded-full mb-4">
+                        <i data-feather="plus" class="text-gray-600"></i>
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-700 mb-2">More Trends Coming</h2>
+                    <p class="text-gray-500 text-center">
+                        Stay tuned as we discover more emerging technologies shaping web development
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 TASAPA</p>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <p class="text-xl font-bold">WebDev Trends</p>
+                    <p class="text-gray-400 mt-2">Exploring the future of web technologies</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 TASAPA. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        feather.replace();
+    </script>
 </body>
 </html>
