@@ -4,44 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Revolution in Coding</title>
-    <link rel="stylesheet" href="latest-news.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .article-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .btn-hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(102, 126, 234, 0.6);
+        }
+    </style>
 </head>
-<body>
+<body class="min-h-screen gradient-bg text-white font-sans">
+    <header class="py-12 px-4 text-center" data-aos="fade-down">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">AI Revolution in Coding</h1>
+        <p class="text-xl opacity-80">The future of software development is here</p>
+    </header>
 
-<header>
-    <h1>AI Revolution in Coding</h1>
-</header>
+    <main class="max-w-4xl mx-auto px-4 pb-16">
+        <article class="article-card rounded-xl p-8 mb-12 shadow-xl" data-aos="fade-up">
+            <div class="flex items-center mb-6">
+                <i data-feather="code" class="mr-3"></i>
+                <h2 class="text-2xl md:text-3xl font-bold">How AI is Changing the Way We Code</h2>
+            </div>
+            <p class="text-lg leading-relaxed mb-6">
+                Artificial Intelligence is transforming software development in ways we never imagined. 
+                From automated code suggestions to bug detection and even AI-driven testing, 
+                developers are leveraging AI tools to write cleaner, faster, and more efficient code.
+            </p>
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg" data-aos="fade-right">
+                    <i data-feather="zap" class="text-blue-300 mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-2">Increased Productivity</h3>
+                    <p>AI tools can suggest entire code blocks, reducing typing time by up to 50%.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg" data-aos="fade-left">
+                    <i data-feather="shield" class="text-green-300 mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-2">Improved Quality</h3>
+                    <p>Real-time error detection and suggestions help prevent bugs before they happen.</p>
+                </div>
+            </div>
 
-<main>
-    <article>
-        <h2>How AI is Changing the Way We Code</h2>
-        <p>
-            Artificial Intelligence is transforming software development in ways we never imagined. 
-            From automated code suggestions to bug detection and even AI-driven testing, 
-            developers are leveraging AI tools to write cleaner, faster, and more efficient code.
-        </p>
+            <div class="flex items-center mb-6 mt-12">
+                <i data-feather="tool" class="mr-3"></i>
+                <h2 class="text-2xl md:text-3xl font-bold">Top AI Tools for Developers in 2025</h2>
+            </div>
+            <ul class="grid md:grid-cols-2 gap-4 mb-8">
+                <li class="flex items-start" data-aos="fade-up" data-aos-delay="100">
+                    <i data-feather="check-circle" class="text-green-400 mr-3 mt-1"></i>
+                    <span>AI-powered Code Assistants (like GitHub Copilot, ChatGPT Code, TabNine)</span>
+                </li>
+                <li class="flex items-start" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="check-circle" class="text-green-400 mr-3 mt-1"></i>
+                    <span>Automated Testing & Debugging Tools</span>
+                </li>
+                <li class="flex items-start" data-aos="fade-up" data-aos-delay="300">
+                    <i data-feather="check-circle" class="text-green-400 mr-3 mt-1"></i>
+                    <span>AI-driven Code Optimization</span>
+                </li>
+                <li class="flex items-start" data-aos="fade-up" data-aos-delay="400">
+                    <i data-feather="check-circle" class="text-green-400 mr-3 mt-1"></i>
+                    <span>Natural Language to Code Conversion</span>
+                </li>
+            </ul>
 
-        <h2>Top AI Tools for Developers in 2025</h2>
-        <ul>
-            <li>AI-powered Code Assistants (like GitHub Copilot, ChatGPT Code, TabNine)</li>
-            <li>Automated Testing & Debugging Tools</li>
-            <li>AI-driven Code Optimization</li>
-            <li>Natural Language to Code Conversion</li>
-        </ul>
+            <div class="flex items-center mb-6 mt-12">
+                <i data-feather="award" class="mr-3"></i>
+                <h2 class="text-2xl md:text-3xl font-bold">Benefits of AI in Coding</h2>
+            </div>
+            <p class="text-lg leading-relaxed mb-8">
+                AI is helping developers save time, reduce errors, and focus more on creative problem-solving.
+                It allows faster prototyping, better collaboration, and more accessible coding for beginners.
+            </p>
+            <div class="relative h-64 rounded-xl overflow-hidden mb-8" data-aos="zoom-in">
+                <img src="http://static.photos/technology/1024x576/42" alt="AI coding" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <p class="text-xl font-medium">The future of programming is collaborative - humans and AI working together</p>
+                </div>
+            </div>
 
-        <h2>Benefits of AI in Coding</h2>
-        <p>
-            AI is helping developers save time, reduce errors, and focus more on creative problem-solving.
-            It allows faster prototyping, better collaboration, and more accessible coding for beginners.
-        </p>
+            <a href="index.html" class="inline-flex items-center px-6 py-3 bg-white text-purple-800 rounded-full font-medium transition-all duration-300 btn-hover-effect" data-aos="fade-up">
+                <i data-feather="arrow-left" class="mr-2"></i>
+                Back to Home
+            </a>
+        </article>
+    </main>
 
-        <a href="index.html" class="btn">⬅ Back to Home</a>
-    </article>
-</main>
+    <footer class="py-8 text-center text-sm opacity-70">
+        <p>© 2025 TASAPA | All Rights Reserved</p>
+    </footer>
 
-<footer>
-    <p>© 2025 TASAPA | All Rights Reserved</p>
-</footer>
-
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+        feather.replace();
+    </script>
 </body>
 </html>
